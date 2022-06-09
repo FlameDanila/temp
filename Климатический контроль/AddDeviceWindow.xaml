@@ -1,0 +1,29 @@
+﻿<Window x:Class="Климатический_контроль.AddDeviceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Климатический_контроль"
+        mc:Ignorable="d"
+        Title="Добавить" Height="237" Width="244" MinHeight="237" MinWidth="244">
+    <Grid Background="#FFF1F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="176*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="125*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AddDevice" Content="Добавить" Margin="52,0,52,0" VerticalAlignment="Center" Height="24" MaxWidth="150" Click="AddDevice_Click" Grid.ColumnSpan="2" Grid.Row="1" />
+        <TextBlock HorizontalAlignment="Right" Margin="0,22,15,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Имя:" Height="16" Width="94" TextAlignment="Right"/>
+        <TextBox x:Name="nameText" Margin="3,22,18,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Height="18"/>
+        <TextBlock Margin="10,59,15,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Температура, С:" Height="19" TextAlignment="Right"/>
+        <TextBox x:Name="tempText" Margin="3,59,18,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Height="18"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,97,15,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Влажность, %:" Height="16" Width="94" TextAlignment="Right"/>
+        <TextBox x:Name="waterText" Margin="3,96,18,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Height="18"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,137,15,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Аккумулятор, %:" Height="16" Width="94" TextAlignment="Right"/>
+        <TextBox x:Name="acumText" Margin="3,136,18,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.Column="1" Height="18"/>
+
+    </Grid>
+</Window>
